@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "Permanent Marker";
+  src: url(./fonts/PermanentMarker.ttf) format("truetype"),
+    url(./fonts/PermanentMarker.woff) format("woff");
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+  margin: 0;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page {
+  font-family: "Inter", sans-serif;
+  background-color: #eeeeee;
+}
+
+.header {
+  height: 100vh;
+  /* add missing declarations */
+  background-image: url(./images/ocean_waves.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* add a CSS rule for the page title here */
+.header-title {
+  font-family: "Permanent Marker", cursive;
+  font-size: 140px;
+  line-height: 140px;
+  color: white;
+  text-transform: uppercase;
+  max-width: 1240px;
+  margin: auto;
+  text-align: center;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .2);
+  display: flex;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* add missing declarations */
+  max-width: 790px;
+  margin: 100px auto 50px;
+}
+
+/* add CSS rules for cards and their content here */
+
+.card {
+  width: 350px;
+  margin-bottom: 60px;
+  padding: 45px 45px 70px;
+  background: #fff;
+  box-shadow: 4px 4px 5px rgba(0, 132, 255, 0.4)
+}
+
+.card-title {
+  font-family: "Permanent Marker", cursive;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card-content {
+  font-size: 16px;
+}
+
+.card__image {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.footer {
+  display: flex;
+  /* add missing declarations */
+  min-height: 300px;
+  background-color: rgb(0,0,0)
+}
+
+/* add a CSS rule for the footer signature */
+.footer-author {
+  color: #ffffff;
+  font-size: 24px;
+  margin: auto;
+}
